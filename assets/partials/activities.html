@@ -1,0 +1,53 @@
+    <section>
+        <div class="row container add-margin">
+            <div class="border-box">
+                <div class="leadership-components">
+                    <h3>Activity</h3>
+                    <div class="row container">
+                        <h1>Your water activity on {{Date.now().toISOString()}}</h1>
+                            <div class="row container">
+                                <h3>Activity</h3>
+                                <ul class="activity-items">
+                                    <li>
+                                        <a href="#" ng-click="setActivity('shower')">
+                                            <img src=" images/shower.svg" class="activity-icon" alt="Shower">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" ng-click="setActivity('toilet')">
+                                            <img src=" images/toilet.svg" name ="toilet" alt="Toilet Flush">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" ng-click="setActivity('handwash')">
+                                            <img src=" images/hand.svg"  name ="handwash" alt="Handwashing">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" ng-click="setActivity('brushing')">
+                                            <img src=" images/toothbrush.svg" name ="brushing" alt="Teeth brushing">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                            <div class="row container shower-length">
+                                <h3>Use</h3>
+                                <label>{{currActivity.charAt(0).toLocaleUpperCase()+ currActivity.substr(1,currActivity.length-1)}} Duration:</label>
+                            <select  class="form-control" ng-model ="activityDuration" ng-change="setDuration(activityDuration)">
+                                <option value="5">5 minutes</option>
+                                <option value="10">10 minutes</option>
+                                <option value="15">15 minutes</option>
+                                <option value="20">20 minutes</option>
+                                <option value="25">25 minutes</option>
+                                <option value="30">30 minutes</option>
+                            </select>
+                            </div>
+                    </div>
+                    <div class="row container">
+                        <button type="button" ng-click="addActivityPromise()" class="btn btn-primary add">Add Activity</button>
+
+                    </div>
+                </div>
+        </div>
+    </section>

@@ -1,0 +1,135 @@
+/* Header */
+.logo {
+  max-height: 50px;
+}
+
+.navbar,
+.navbar-header {
+  min-height: 80px;
+}
+
+.navbar-default .navbar-toggle {
+  margin-top: 23px;
+}
+
+.nav>li {
+  margin-top: 15px;
+}
+
+@media (max-width: 400px) {
+  .navbar,
+  .navbar-header {
+    min-height: 60px;
+  }
+
+  .logo {
+    max-height: 30px;
+  }
+}
+
+/* General */
+body {
+  padding-bottom: 50px;
+}
+
+ul {
+  list-style: none;
+  font-size: 13px;
+}
+
+li span {
+  background-color: green;
+  padding: 10px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.border-box {
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 75%;
+}
+
+button.btn.btn-primary {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  float: right;
+}
+
+.add-margin {
+  margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+  .border-box {
+    max-width: 100%;
+  }
+}
+
+/* Daily Summary */
+.summary-announcement {
+  background-color: #66CCCC;
+  border-radius: 5px;
+  padding: 5px;
+  color: #fff;
+}
+
+.gallon-items img {
+  background-color: #66CCCC;
+  max-height: 50px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* Leaderboard */
+.leadership-items li img {
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.water-data {
+  background-color: #66CCCC;
+  height: 25px;
+  width: 100px;
+  float: right;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.leadership-components {
+  padding-left: 15px;
+}
+
+/* Activity */
+.activity-items,
+.gallon-items {
+  padding-left: 0;
+}
+
+.activity-items li {
+  display: inline;
+}
+
+.activity-items img {
+  background-color: #cccccc;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  max-height: 75px;
+  border-radius: 5px;
+}
+
+.activity-items img:hover {
+  background-color: #66CCCC;
+}
+
+.shower-length {
+  max-width: 100%;
+}
+
+button.add{
+    background-color: #66CCCC;
+    border: 1px solid transparent;
+}

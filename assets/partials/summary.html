@@ -1,0 +1,23 @@
+    <section>
+                <div class="container">
+                    <div class="row container">
+                        <h1>Daily Summary</h1>
+                    </div>
+                    <div class="row container">
+                        <div class="col-md-8">
+                            <h3 ng-model="gallonsUsed">{{gallonsUsed}} gallons</h3>
+                        </div>
+                    </div>
+                    <div class="row container add-margin">
+                        <h2>Activity Breakdown</h2>
+                        <ul class="gallon-items">
+                            <li><img src=" images/shower.svg" class="activity-icon" alt="Shower" ng-model="split.shower"></span> {{split.shower||0}} gallons</li>
+                            <li><img src=" images/toilet.svg" alt="Toilet Flush" ng-model="split.toilet"> {{split.toilet||0}} gallons</li>
+                            <li><img src=" images/hand.svg" alt="Handwashing" ng-model="split.handwash"> {{split.handwash||0}} gallons</li>
+                            <li><img src=" images/toothbrush.svg" alt="Teeth brushing" ng-model="split.brushing"> {{split.brushing||0}} gallons</li>
+                        </ul>
+                    </div>
+                </div>
+    </section>
+
+
